@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #152033;
+  background: #f8f9fb;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1120px, 90%); margin: 0 auto; }
+.narrow { width: min(760px, 90%); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(248,249,251,.94);
+  border-bottom: 1px solid #e4e8ef;
+  backdrop-filter: blur(12px);
+}
+.nav-wrap, .footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+}
+.brand {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #152033;
+  color: white;
+  font-weight: 700;
+}
+nav { display: flex; gap: 24px; flex-wrap: wrap; }
+nav a { font-size: .95rem; color: #536176; }
+nav a:hover { color: #152033; }
+.hero {
+  padding: 100px 0 84px;
+  background: linear-gradient(135deg, #f8f9fb 0%, #eef2f7 100%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 70px;
+  align-items: center;
+}
+.eyebrow, .section-kicker, .project-tools {
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #6f7d91;
+}
+h1, h2, h3 { line-height: 1.12; margin-top: 0; }
+h1 { font-size: clamp(3rem, 7vw, 5.6rem); margin-bottom: 24px; letter-spacing: -.04em; }
+h2 { font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 26px; letter-spacing: -.03em; }
+h3 { font-size: 1.45rem; margin-bottom: 14px; }
+.hero-copy { font-size: 1.25rem; max-width: 680px; color: #526078; }
+.hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid #152033;
+}
+.button.primary { background: #152033; color: white; }
+.button.secondary { background: transparent; color: #152033; }
+.hero-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #e2e7ee;
+  box-shadow: 0 16px 40px rgba(21,32,51,.07);
+}
+.hero-card span { display: block; font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; color: #7a8799; margin-bottom: 10px; }
+.hero-card strong { display: block; font-size: 1.35rem; margin-bottom: 12px; }
+.hero-card p { color: #68768a; margin-bottom: 0; }
+.section { padding: 90px 0; }
+.section.alt { background: white; }
+.section p { color: #5b687b; font-size: 1.04rem; }
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
+.project-card {
+  position: relative;
+  padding: 28px;
+  min-height: 360px;
+  border-radius: 18px;
+  border: 1px solid #e2e7ee;
+  background: #fbfcfe;
+  display: flex;
+  flex-direction: column;
+}
+.project-number { font-size: 2.6rem; font-weight: 700; color: #d7dde6; margin-bottom: 34px; }
+.project-tools { margin-bottom: 14px; }
+.project-card p:not(.project-tools) { font-size: .98rem; }
+.status { margin-top: auto; padding-top: 24px; font-size: .86rem; font-weight: 700; color: #758299; }
+.skill-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.skill-list span {
+  padding: 10px 15px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid #dde3eb;
+  font-weight: 700;
+  font-size: .92rem;
+}
+.contact-section { background: #eef2f7; }
+footer { border-top: 1px solid #dde3eb; background: #f8f9fb; }
+.footer-wrap { color: #7b8798; font-size: .88rem; }
+@media (max-width: 850px) {
+  .hero-grid, .project-grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 70px; }
+  .hero-grid { gap: 36px; }
+  .project-card { min-height: auto; }
+}
+@media (max-width: 600px) {
+  .nav-wrap { align-items: flex-start; padding: 16px 0; }
+  nav { gap: 14px; justify-content: flex-end; }
+  h1 { font-size: 3rem; }
+  .section { padding: 66px 0; }
+  .footer-wrap { flex-direction: column; align-items: flex-start; justify-content: center; padding: 22px 0; }
+}
