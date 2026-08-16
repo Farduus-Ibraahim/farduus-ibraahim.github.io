@@ -56,9 +56,15 @@ nav a:hover { color: #152033; }
   color: #6f7d91;
 }
 h1, h2, h3 { line-height: 1.12; margin-top: 0; }
-h1 { font-size: clamp(3rem, 7vw, 5.6rem); margin-bottom: 24px; letter-spacing: -.04em; }
+h1 { font-size: clamp(3rem, 7vw, 5.6rem); margin-bottom: 16px; letter-spacing: -.04em; }
 h2 { font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 26px; letter-spacing: -.03em; }
 h3 { font-size: 1.45rem; margin-bottom: 14px; }
+.hero-role {
+  margin: 0 0 18px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #34435a;
+}
 .hero-copy { font-size: 1.25rem; max-width: 680px; color: #526078; }
 .hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
 .button {
