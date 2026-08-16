@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Applichem global production optimization case study by Farduus Ibraahim.">
+  <title>Applichem Optimization | Farduus Ibraahim</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">FI</a>
+      <nav aria-label="Primary navigation">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+          <p class="eyebrow">Supply Chain Analytics · Academic Team Case Study</p>
+          <h1>Applichem Global Production Optimization</h1>
+          <p class="case-lede">Evaluating how a global manufacturing network could balance cost efficiency, practical capacity, regional sourcing, and operational flexibility.</p>
+          <div class="skill-list compact">
+            <span>Excel Solver</span>
+            <span>Optimization</span>
+            <span>Scenario Analysis</span>
+            <span>Supply Chain Strategy</span>
+          </div>
+        </div>
+        <aside class="case-summary">
+          <span class="summary-label">Recommended scenario</span>
+          <strong>80% Capacity + Strategic Routing</strong>
+          <div class="summary-metric">
+            <span>Total modeled cost</span>
+            <b>$78.37M</b>
+          </div>
+          <div class="summary-metric">
+            <span>Cost vs. original 80% model</span>
+            <b>+0.12%</b>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container case-content">
+        <div class="case-section-heading">
+          <p class="section-kicker">01 · Business Problem</p>
+          <h2>Cost alone was not enough.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The analysis evaluated production and distribution across a six-plant global network. The objective was to meet market demand while accounting for plant capacity, manufacturing economics, transportation, and the practical realities of operating the network.</p>
+          <p>A pure cost-minimizing solution could push facilities toward full utilization and create routing choices that were mathematically valid but less attractive operationally. The team therefore compared capacity scenarios and added strategic sourcing constraints.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-kicker">02 · Approach</p>
+        <h2>Model, stress-test, then improve the solution.</h2>
+        <div class="approach-grid">
+          <article class="approach-card">
+            <span>1</span>
+            <h3>Build the optimization model</h3>
+            <p>Use Excel Solver to allocate production flows while satisfying demand and plant-capacity constraints.</p>
+          </article>
+          <article class="approach-card">
+            <span>2</span>
+            <h3>Test capacity assumptions</h3>
+            <p>Compare a theoretical 100% capacity model with a more conservative 80% operating-capacity scenario.</p>
+          </article>
+          <article class="approach-card">
+            <span>3</span>
+            <h3>Add business constraints</h3>
+            <p>Modify selected routes to improve regional sourcing, diversification, and operational logic.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <p class="section-kicker">03 · Scenario Analysis</p>
+        <h2>More flexibility came at a modest cost.</h2>
+        <div class="scenario-grid">
+          <article class="scenario-card">
+            <span class="scenario-label">100% Capacity</span>
+            <strong>$74.09M</strong>
+            <p>Lowest modeled cost, but leaves little operating cushion for maintenance, breakdowns, labor shortages, or demand changes.</p>
+          </article>
+          <article class="scenario-card">
+            <span class="scenario-label">80% Capacity</span>
+            <strong>$78.28M</strong>
+            <p>Creates a more realistic operating buffer and reduces dependence on running the network at theoretical maximum capacity.</p>
+          </article>
+          <article class="scenario-card featured">
+            <span class="scenario-label">80% + Strategic Routing</span>
+            <strong>$78.37M</strong>
+            <p>Preserves the capacity buffer while introducing routing choices designed to improve regional sourcing and network resilience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-content">
+        <div class="case-section-heading">
+          <p class="section-kicker">04 · Strategic Routing</p>
+          <h2>Four changes made the model more practical.</h2>
+        </div>
+        <div>
+          <div class="route-list">
+            <div class="route-item"><b>Mexico → Venezuela</b><span>At least 3.4M lbs</span></div>
+            <div class="route-item"><b>Frankfurt → Venezuela</b><span>At least 9.0M lbs</span></div>
+            <div class="route-item"><b>Mexico → Japan</b><span>0 lbs</span></div>
+            <div class="route-item"><b>Frankfurt → Japan</b><span>At least 8.6M lbs</span></div>
+          </div>
+          <p class="case-note">Compared with the original 80% solution, the revised routing shifted Mexico away from Japan and toward Venezuela, while Frankfurt supplied more of Japan. The team’s rationale emphasized regional sourcing, diversification, the shorter Mexico–Venezuela route, and Frankfurt’s efficiency for Japan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recommendation-section">
+      <div class="container case-content">
+        <div class="case-section-heading">
+          <p class="section-kicker">05 · Recommendation</p>
+          <h2>Choose the more resilient network.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The recommended solution was the modified 80% capacity model at approximately <strong>$78.37 million</strong>. It cost only about <strong>0.12% more</strong> than the unconstrained 80% model, while producing a sourcing pattern the team considered more strategically balanced.</p>
+          <p>Longer term, the team recommended using Frankfurt as the primary bulk-production hub, preserving Gary for U.S. customization, developing Mexico as a flexible regional hub, improving Canada’s yield, limiting Venezuela to a more focused domestic role, and repositioning Sunchem toward packaging, quality control, engineering, and customer support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <p class="section-kicker">What This Project Demonstrates</p>
+        <h2>Analytics that connects the model to the business.</h2>
+        <p>This project demonstrates optimization modeling, scenario analysis, interpretation of capacity trade-offs, and the ability to move beyond a mathematically optimal answer toward a recommendation that considers operational flexibility and supply-chain strategy.</p>
+        <p class="disclosure">Academic team project completed in TCU's M.S. Business Analytics program. Proprietary/copyrighted case materials and source exhibits are not reproduced here; this page presents a high-level summary of the team's analysis.</p>
+        <a class="button primary" href="../index.html#projects">Back to Projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 Farduus Ibraahim</span>
+      <span>Built with HTML & CSS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>
