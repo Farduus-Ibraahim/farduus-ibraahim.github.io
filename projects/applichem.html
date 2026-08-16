@@ -22,17 +22,17 @@
   </header>
 
   <main>
-    <section class="case-hero">
+    <section class="case-hero applichem-hero">
       <div class="container case-hero-grid">
         <div>
           <a class="back-link" href="../index.html#projects">← Back to Projects</a>
           <p class="eyebrow">Supply Chain Analytics · Academic Team Case Study</p>
           <h1>Applichem Global Production Optimization</h1>
-          <p class="case-lede">Evaluating how a global manufacturing network could balance cost efficiency, practical capacity, regional sourcing, and operational flexibility.</p>
+          <p class="case-lede">Using optimization and scenario analysis to balance cost, capacity, regional sourcing, and resilience across a six-plant manufacturing network.</p>
           <div class="skill-list compact">
             <span>Excel Solver</span>
             <span>Optimization</span>
-            <span>Scenario Analysis</span>
+            <span>What-If Analysis</span>
             <span>Supply Chain Strategy</span>
           </div>
         </div>
@@ -44,8 +44,12 @@
             <b>$78.37M</b>
           </div>
           <div class="summary-metric">
-            <span>Cost vs. original 80% model</span>
+            <span>Cost vs. regular 80% model</span>
             <b>+0.12%</b>
+          </div>
+          <div class="summary-metric">
+            <span>Baseline demand</span>
+            <b>79.9M lbs</b>
           </div>
         </aside>
       </div>
@@ -59,30 +63,33 @@
         </div>
         <div class="case-copy">
           <p>The analysis evaluated production and distribution across a six-plant global network. The objective was to meet market demand while accounting for plant capacity, manufacturing economics, transportation, and the practical realities of operating the network.</p>
-          <p>A pure cost-minimizing solution could push facilities toward full utilization and create routing choices that were mathematically valid but less attractive operationally. The team therefore compared capacity scenarios and added strategic sourcing constraints.</p>
+          <p>A pure cost-minimizing solution could push facilities toward full utilization and create routing choices that were mathematically valid but less attractive operationally. The team therefore tested a more practical capacity assumption, added strategic sourcing constraints, and stress-tested the network under higher demand.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section model-setup-section">
       <div class="container">
-        <p class="section-kicker">02 · Approach</p>
-        <h2>Model, stress-test, then improve the solution.</h2>
-        <div class="approach-grid">
-          <article class="approach-card">
-            <span>1</span>
-            <h3>Build the optimization model</h3>
-            <p>Use Excel Solver to allocate production flows while satisfying demand and plant-capacity constraints.</p>
+        <p class="section-kicker">02 · Model Setup</p>
+        <h2>Three assumptions shaped the analysis.</h2>
+        <div class="metric-card-grid">
+          <article class="metric-card">
+            <span class="metric-top">Demand</span>
+            <strong>79.9M</strong>
+            <span class="metric-unit">pounds</span>
+            <p>Demand was held constant to create a reliable baseline for comparing scenarios.</p>
           </article>
-          <article class="approach-card">
-            <span>2</span>
-            <h3>Test capacity assumptions</h3>
-            <p>Compare a theoretical 100% capacity model with a more conservative 80% operating-capacity scenario.</p>
+          <article class="metric-card accent-card">
+            <span class="metric-top">Capacity factor</span>
+            <strong>80%</strong>
+            <span class="metric-unit">of theoretical capacity</span>
+            <p>The team reduced the factor from 100% to allow room for maintenance, breakdowns, and unexpected disruptions.</p>
           </article>
-          <article class="approach-card">
-            <span>3</span>
-            <h3>Add business constraints</h3>
-            <p>Modify selected routes to improve regional sourcing, diversification, and operational logic.</p>
+          <article class="metric-card">
+            <span class="metric-top">Cost & yield</span>
+            <strong>Held</strong>
+            <span class="metric-unit">constant</span>
+            <p>Production costs and plant yields were kept unchanged so plants could be compared consistently.</p>
           </article>
         </div>
       </div>
@@ -90,7 +97,31 @@
 
     <section class="section alt">
       <div class="container">
-        <p class="section-kicker">03 · Scenario Analysis</p>
+        <p class="section-kicker">03 · Approach</p>
+        <h2>Model, stress-test, then improve the solution.</h2>
+        <div class="approach-grid">
+          <article class="approach-card">
+            <span>1</span>
+            <h3>Optimize flows</h3>
+            <p>Use Excel Solver to allocate production while satisfying demand and plant-capacity constraints.</p>
+          </article>
+          <article class="approach-card">
+            <span>2</span>
+            <h3>Use practical capacity</h3>
+            <p>Compare theoretical 100% capacity with a more realistic 80% operating-capacity scenario.</p>
+          </article>
+          <article class="approach-card">
+            <span>3</span>
+            <h3>Add strategic logic</h3>
+            <p>Adjust selected routes to improve regional sourcing, diversification, and network resilience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scenario-section">
+      <div class="container">
+        <p class="section-kicker">04 · Scenario Analysis</p>
         <h2>More flexibility came at a modest cost.</h2>
 
         <div class="cost-visual" aria-label="Cost comparison across three modeled scenarios">
@@ -114,34 +145,76 @@
         <div class="insight-strip">
           <div class="insight-number">+$93.7K</div>
           <div>
-            <strong>Cost of the strategic routing changes</strong>
-            <p>Only about 0.12% above the regular 80% model, in exchange for a sourcing pattern the team considered more strategically balanced.</p>
+            <strong>Trade-off for the strategic routing changes</strong>
+            <p>Only about 0.12% above the regular 80% model, while improving regional sourcing and diversification.</p>
           </div>
-        </div>
-
-        <div class="scenario-grid">
-          <article class="scenario-card">
-            <span class="scenario-label">100% Capacity</span>
-            <strong>$74.09M</strong>
-            <p>Lowest modeled cost, but leaves little operating cushion for maintenance, breakdowns, labor shortages, or demand changes.</p>
-          </article>
-          <article class="scenario-card">
-            <span class="scenario-label">80% Capacity</span>
-            <strong>$78.28M</strong>
-            <p>Creates a more realistic operating buffer and reduces dependence on running the network at theoretical maximum capacity.</p>
-          </article>
-          <article class="scenario-card featured">
-            <span class="scenario-label">80% + Strategic Routing</span>
-            <strong>$78.37M</strong>
-            <p>Preserves the capacity buffer while introducing routing choices designed to improve regional sourcing and network resilience.</p>
-          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt whatif-section">
       <div class="container">
-        <p class="section-kicker">04 · Strategic Routing</p>
+        <p class="section-kicker">05 · What-If Analysis</p>
+        <h2>What happens if demand rises 10%?</h2>
+        <p class="section-intro">The revised submission stress-tested the network by increasing demand to 87.9 million pounds. At an 80% capacity factor, the network no longer had enough effective capacity. Raising the capacity factor to 88% restored feasibility without adding a new plant.</p>
+
+        <div class="stress-test-grid">
+          <article class="stress-card shortage-card">
+            <div class="stress-head">
+              <span>Capacity factor</span>
+              <strong>80%</strong>
+            </div>
+            <div class="capacity-comparison">
+              <div class="capacity-line">
+                <div class="capacity-label"><span>Demand</span><b>87.9M</b></div>
+                <div class="capacity-track"><div class="capacity-fill demand-fill" style="width:100%"></div></div>
+              </div>
+              <div class="capacity-line">
+                <div class="capacity-label"><span>Capacity</span><b>80.6M</b></div>
+                <div class="capacity-track"><div class="capacity-fill capacity-fill-low" style="width:91.7%"></div></div>
+              </div>
+            </div>
+            <div class="stress-result bad-result">
+              <strong>7.3M lb shortage</strong>
+              <span>Not feasible</span>
+            </div>
+          </article>
+
+          <div class="stress-arrow" aria-hidden="true">→</div>
+
+          <article class="stress-card feasible-card">
+            <div class="stress-head">
+              <span>Capacity factor</span>
+              <strong>88%</strong>
+            </div>
+            <div class="capacity-comparison">
+              <div class="capacity-line">
+                <div class="capacity-label"><span>Demand</span><b>87.9M</b></div>
+                <div class="capacity-track"><div class="capacity-fill demand-fill" style="width:99.2%"></div></div>
+              </div>
+              <div class="capacity-line">
+                <div class="capacity-label"><span>Capacity</span><b>88.6M</b></div>
+                <div class="capacity-track"><div class="capacity-fill capacity-fill-good" style="width:100%"></div></div>
+              </div>
+            </div>
+            <div class="stress-result good-result">
+              <strong>Feasible</strong>
+              <span>0.7M lb capacity cushion</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="takeaway-box">
+          <span class="takeaway-label">Key takeaway</span>
+          <strong>Higher demand requires more effective capacity and flexibility.</strong>
+          <p>The team concluded that moving from an 80% to an 88% capacity factor could absorb a 10% increase in demand while maintaining the existing plant network.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section routing-section">
+      <div class="container">
+        <p class="section-kicker">06 · Strategic Routing</p>
         <h2>The revised model changed who supplied whom.</h2>
 
         <div class="routing-visual">
@@ -191,64 +264,77 @@
           </div>
         </div>
 
-        <p class="case-note center-note">The revised routing shifted Mexico away from Japan and toward Venezuela, while Frankfurt supplied more of Japan. The team’s rationale emphasized regional sourcing, diversification, the shorter Mexico–Venezuela route, and Frankfurt’s efficiency for Japan.</p>
+        <div class="routing-explainer-grid">
+          <article>
+            <span>Why 3.4M lbs?</span>
+            <p>Mexico's original 3.4M-pound shipment to Japan was redirected to Venezuela instead of increasing Mexico's production.</p>
+          </article>
+          <article>
+            <span>How it connects</span>
+            <p>Mexico shifted 3.4M lbs from Japan to Venezuela, while Frankfurt shifted 3.4M lbs from Venezuela to Japan.</p>
+          </article>
+          <article>
+            <span>Business rationale</span>
+            <p>The change improved regional sourcing and diversification while reducing Venezuela's dependence on Frankfurt.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section recommendation-section">
       <div class="container">
-        <p class="section-kicker">05 · Recommendation</p>
-        <h2>Choose the more resilient network.</h2>
+        <p class="section-kicker">07 · Five-Year Recommendation</p>
+        <h2>Give each plant a clearer strategic role.</h2>
         <div class="recommendation-lede">
-          <p>The recommended solution was the modified 80% capacity model at approximately <strong>$78.37 million</strong>. It cost only about <strong>0.12% more</strong> than the unconstrained 80% model, while producing a sourcing pattern the team considered more strategically balanced.</p>
+          <p>The revised team recommendation was not to treat every plant the same. Instead, the network should use each location for the role that best matches its economics, capabilities, and local advantages.</p>
         </div>
 
         <div class="plant-strategy-grid">
           <article class="plant-strategy-card primary-hub">
             <span class="plant-code">FRA</span>
             <h3>Frankfurt</h3>
-            <strong>Primary bulk hub</strong>
-            <p>Use its efficiency to support major international demand.</p>
+            <strong>Primary global bulk hub</strong>
+            <p>Leverage its lowest manufacturing cost, 98.9% yield, and strong technology; share best practices across the network.</p>
           </article>
           <article class="plant-strategy-card">
             <span class="plant-code">GARY</span>
             <h3>Gary</h3>
             <strong>U.S. customization</strong>
-            <p>Keep a focused role serving domestic customization needs.</p>
+            <p>Specialize in U.S. customization while Frankfurt handles larger volumes of standardized product.</p>
           </article>
           <article class="plant-strategy-card">
             <span class="plant-code">MEX</span>
             <h3>Mexico</h3>
             <strong>Flexible regional hub</strong>
-            <p>Adopt stronger processes and support nearby regional demand.</p>
+            <p>Use its capacity and workforce while transferring Frankfurt's process and waste-recovery practices.</p>
           </article>
           <article class="plant-strategy-card">
             <span class="plant-code">CAN</span>
             <h3>Canada</h3>
             <strong>Yield improvement</strong>
-            <p>Improve productivity while serving Canada and the U.S.</p>
+            <p>Improve yield, maintain high utilization, and continue serving Canadian and U.S. demand.</p>
           </article>
           <article class="plant-strategy-card">
             <span class="plant-code">VEN</span>
             <h3>Venezuela</h3>
             <strong>Focused domestic role</strong>
-            <p>Repair equipment, improve training, and limit network dependence.</p>
+            <p>Repair the dryer, improve employee training, and keep its role primarily focused on domestic production.</p>
           </article>
           <article class="plant-strategy-card">
             <span class="plant-code">SUN</span>
             <h3>Sunchem</h3>
-            <strong>Support & quality role</strong>
-            <p>Shift toward packaging, quality control, engineering, and customer support.</p>
+            <strong>Technical & support role</strong>
+            <p>Focus on local packaging, quality control, engineering, and customer support while standardized bulk production shifts to Frankfurt.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section final-takeaway-section">
       <div class="container narrow">
         <p class="section-kicker">What This Project Demonstrates</p>
         <h2>Analytics that connects the model to the business.</h2>
-        <p>This project demonstrates optimization modeling, scenario analysis, interpretation of capacity trade-offs, and the ability to move beyond a mathematically optimal answer toward a recommendation that considers operational flexibility and supply-chain strategy.</p>
+        <p>This project demonstrates optimization modeling, scenario analysis, capacity planning, interpretation of trade-offs, and the ability to move beyond a mathematically optimal answer toward a recommendation that considers operational flexibility and supply-chain strategy.</p>
         <p class="disclosure">Academic team project completed in TCU's M.S. Business Analytics program. Proprietary/copyrighted case materials and source exhibits are not reproduced here; this page presents a high-level summary of the team's analysis.</p>
         <a class="button primary" href="../index.html#projects">Back to Projects</a>
       </div>
